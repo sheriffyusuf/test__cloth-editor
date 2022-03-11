@@ -10,7 +10,8 @@ html {
   @apply text-base bg-white;
 }
 
-a {
+a,
+button {
   @apply transition-all duration-300 ease-linear;
 }
 
