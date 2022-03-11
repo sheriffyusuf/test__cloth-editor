@@ -2,7 +2,6 @@ import Model from "@public/img/shirt.png";
 import { color } from "@recoil/atoms";
 import classNames from "@utils/classNames";
 import Image from "next/image";
-// import classNames from "@utils/classNames";
 import React from "react";
 import { useRecoilValue } from "recoil";
 

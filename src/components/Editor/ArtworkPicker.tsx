@@ -44,10 +44,7 @@ export function ArtworkPicker({ t }: { t: Translate }) {
                 {art.alt}
               </RadioGroup.Label>
               <div className="w-[132px] h-[132px] snap-start scroll-mx-6 shrink-0">
-                <img
-                  className="w-full h-full object-contain bg-gray-50"
-                  src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80"
-                />
+                <img className="w-full h-full object-contain bg-gray-50" src={art.url} />
               </div>
             </RadioGroup.Option>
           ))}

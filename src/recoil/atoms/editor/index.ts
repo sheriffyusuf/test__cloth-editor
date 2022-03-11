@@ -28,7 +28,7 @@ export const size = atom({
 });
 export const art = atom({
   key: Atoms.Arts,
-  default: "",
+  default: "img/art1.jpg",
 });
 export const frame = atom({
   key: Atoms.Frames,
