@@ -20,7 +20,7 @@ const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
           </div>
         </aside>
         {/* Right Section */}
-        <aside className="px-6 md:p-20 min-h-full overflow-y-auto">
+        <aside className="px-6 pt-8 md:p-20 min-h-full overflow-y-auto border-t border-t-slate-200 md:border-t-0">
           <ArtworkPicker t={t} />
           <FramePicker t={t} />
           <SizePicker t={t} />
