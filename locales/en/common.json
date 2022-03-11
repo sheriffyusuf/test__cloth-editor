@@ -1,9 +1,13 @@
 {
   "hello": "Hello",
   "greet": "Hello, {{name}}!",
-  "world": "World",
-  "documentation": "Go To Documentation",
-  "language": {
-    "en": "🇺🇸 English"
-  }
+  "heading1": "Prints on demand,",
+  "heading2": "Made by you.",
+  "link1": "New Releases",
+  "link2": "Collections",
+  "idea": "Have an idea what you want to print?",
+  "ctaText": "Start Designing",
+  "subheader1": "Popular Releases",
+  "copyright": "© 2022. All rights reserved",
+  "disclaimer": "Platform is not responsible and expressly disclaim all liability for, damages of any kind arising out of use, reference to, or reliance on any information contained. Platform is a property of Company, a company duly registered with the proper body."
 }

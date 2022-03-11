@@ -1,4 +1,8 @@
 {
-  "title": "Home",
-  "someText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit, lacus vel blandit auctor, mauris metus sollicitudin nulla, vitae feugiat mi elit at nunc. Suspendisse accumsan pulvinar tellus, sit amet pharetra elit tincidunt vitae. Suspendisse potenti."
+  "editor": "Editor",
+  "cta": "Add to Cart {{amount}}",
+  "pick": "Pick Artwork",
+  "select": "Select Frame",
+  "size": "Size",
+  "details": "You can pick an artwork, select a frame along with the color of the t-shirt and size and get a high quality print."
 }

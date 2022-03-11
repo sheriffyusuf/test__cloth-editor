@@ -5,8 +5,14 @@ html {
   font-feature-settings: "kern";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.05ex;
+  letter-spacing: -0.04em;
+  font-feature-settings: "ss01" on;
   @apply text-base bg-white;
 }
+
+a {
+  @apply transition-all duration-300 ease-linear;
+}
+
 @tailwind components;
 @tailwind utilities;
