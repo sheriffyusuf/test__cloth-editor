@@ -3,12 +3,13 @@ import { atom } from "recoil";
 
 /**
  * Typing Color to accept only the following
+ * Red, Black, Green, Blue
  */
 enum Color {
-  "Red",
-  "Black",
-  "Green",
-  "Blue",
+  Red = "Red",
+  Black = "Black",
+  Green = "Green",
+  Blue = "Blue",
 }
 
 /**
