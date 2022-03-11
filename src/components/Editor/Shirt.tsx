@@ -18,7 +18,7 @@ const Hue = {
 export function Shirt() {
   const selectedColor = useRecoilValue(color);
   return (
-    <div className={classNames(Hue[selectedColor], "w-full filter")}>
+    <div className={classNames(Hue[selectedColor], "w-full filter relative")}>
       <Image src={Model} layout="responsive" objectFit="contain" loading="lazy" placeholder="blur" objectPosition="center" alt="" />
     </div>
   );
