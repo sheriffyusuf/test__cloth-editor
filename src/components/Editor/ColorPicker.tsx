@@ -16,7 +16,7 @@ const colors: ColorsProp = [
   { name: "Green", class: "bg-green-500" },
 ];
 
-export function Color() {
+export function ColorPicker() {
   const [activeColor, setColor] = useRecoilState(color);
   return (
     <RadioGroup value={activeColor} onChange={setColor}>

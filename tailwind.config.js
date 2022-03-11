@@ -22,6 +22,12 @@ module.exports = {
       },
       colors: {
         black: "#070707",
+        shirt: {
+          green: "#006300",
+          blue: "#005ba9",
+          black: "#1a1a1a",
+          red: "#fb0000",
+        },
         gray: {
           50: "#CDCDCD",
           100: "#ACACAC",
