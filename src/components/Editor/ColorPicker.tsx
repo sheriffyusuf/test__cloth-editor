@@ -10,10 +10,10 @@ type ColorsProp = {
 }[];
 
 const colors: ColorsProp = [
-  { name: "Black", class: "bg-black" },
-  { name: "Red", class: "bg-red-500" },
-  { name: "Blue", class: "bg-blue-500" },
-  { name: "Green", class: "bg-green-500" },
+  { name: "Black", class: "bg-shirt-black" },
+  { name: "Red", class: "bg-shirt-red" },
+  { name: "Blue", class: "bg-shirt-blue" },
+  { name: "Green", class: "bg-shirt-green" },
 ];
 
 export function ColorPicker() {
@@ -38,7 +38,10 @@ export function ColorPicker() {
               <RadioGroup.Label as="p" className="sr-only">
                 {color.name}
               </RadioGroup.Label>
-              <span aria-hidden="true" className={classNames(color.class, "bg-black h-14 w-14 border border-black border-opacity-10")} />
+              <span
+                aria-hidden="true"
+                className={classNames(color.class, "bg-black h-8 md:h-14 w-8 md:w-14 border border-black border-opacity-10")}
+              />
             </RadioGroup.Option>
           </>
         ))}
