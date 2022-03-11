@@ -6,7 +6,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.04em;
-  font-feature-settings: "ss01" on;
+  font-feature-settings: "ss01" on, "ss02" on, "ss04" on;
   @apply text-base bg-white;
 }
 

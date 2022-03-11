@@ -10,10 +10,10 @@ type ColorsProp = {
 }[];
 
 const colors: ColorsProp = [
-  { name: "Black", class: "bg-shirt-black" },
-  { name: "Red", class: "bg-shirt-red" },
-  { name: "Blue", class: "bg-shirt-blue" },
-  { name: "Green", class: "bg-shirt-green" },
+  { name: "Black", class: "bg-shirtBlack" },
+  { name: "Red", class: "bg-shirtRed" },
+  { name: "Blue", class: "bg-shirtBlue" },
+  { name: "Green", class: "bg-shirtGreen" },
 ];
 
 export function ColorPicker() {

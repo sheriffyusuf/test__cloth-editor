@@ -1,12 +1,9 @@
-import { ColorPicker, Navbar, Shirt } from "@components";
-import { color } from "@recoil/atoms";
+import { ArtworkPicker, ColorPicker, Navbar, Shirt } from "@components";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import { useRecoilValue } from "recoil";
 
 const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
   const { t } = useTranslation(defaultNamespace);
-  const selectedColor = useRecoilValue(color);
 
   return (
     <main className="md:h-screen grid grid-cols-1 md:grid-cols-1 md:grid-rows-[80px_1fr] overflow-hidden">
@@ -23,10 +20,10 @@ const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
         </aside>
         {/* Right Section */}
         <aside className="px-6 md:p-20 overflow-y-auto">
-          <h2>{t`home:pick`}</h2>
-
-          <p>{t("home:cta", { amount: `£180` })}</p>
-          <p>{t`home:details`}</p>
+          <ArtworkPicker t={t} />
+          <h2>{t`home:select`}</h2>
+          <h2>{t`home:size`}</h2>
+          <p className="text-gray-200">{t`home:details`}</p>
         </aside>
       </section>
     </main>
