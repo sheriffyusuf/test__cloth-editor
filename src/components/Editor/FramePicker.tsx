@@ -1,15 +1,16 @@
 import { RadioGroup } from "@headlessui/react";
-import { art } from "@recoil/atoms";
+import { frame } from "@recoil/atoms";
 import classNames from "@utils/classNames";
 import { Translate } from "next-translate";
 import React from "react";
+import { IoBan } from "react-icons/io5";
 import { useRecoilState } from "recoil";
 
-const Arts = [
-  { url: "img/art1.jpg", alt: "Alt Art 1" },
-  { url: "img/art2.jpg", alt: "Alt Art 2" },
-  { url: "img/art3.jpg", alt: "Alt Art 3" },
-  { url: "img/art4.jpg", alt: "Alt Art 4" },
+const Frames = [
+  { url: "", alt: "No Frame" },
+  { url: "img/frame2.png", alt: "Alt Art 2" },
+  { url: "img/frame3.png", alt: "Alt Art 3" },
+  { url: "img/frame4.png", alt: "Alt Art 4" },
 ];
 
 /**
@@ -17,20 +18,20 @@ const Arts = [
  * @param t - Translate function to default locale
  * @returns React Component
  */
-export function ArtworkPicker({ t }: { t: Translate }) {
-  const [activeArt, setArt] = useRecoilState(art);
+export function FramePicker({ t }: { t: Translate }) {
+  const [activeFrame, setFrame] = useRecoilState(frame);
   return (
     <>
-      <h2 className="font-medium text-lg">{t`home:pick`}</h2>
+      <h2 className="font-medium text-lg">{t`home:select`}</h2>
       <RadioGroup
-        value={activeArt}
-        onChange={setArt}
+        value={activeFrame}
+        onChange={setFrame}
         className="relative w-full flex gap-4 snap-x snap-mandatory overflow-y-hidden overflow-x-auto pt-2 pb-6 px-2 -ml-[6px] mb-5">
-        {Arts.map((art, idx) => (
+        {Frames.map((frame, idx) => (
           <RadioGroup.Option
             as="div"
             key={idx}
-            value={art.url}
+            value={frame.url}
             className={({ active, checked }) =>
               classNames(
                 active && checked ? "ring-2" : "",
@@ -39,10 +40,17 @@ export function ArtworkPicker({ t }: { t: Translate }) {
               )
             }>
             <RadioGroup.Label as="p" className="sr-only">
-              {art.alt}
+              {frame.alt}
             </RadioGroup.Label>
-            <div className="w-[132px] h-[132px] snap-start scroll-mx-6 shrink-0">
-              <img className="w-full h-full object-contain bg-gray-50" src={art.url} />
+
+            <div className="w-[132px] h-[132px] snap-start scroll-mx-6 shrink-0 bg-gray-50">
+              {frame.url === "" ? (
+                <div className="flex text-xl w-full h-full">
+                  <IoBan size="2.5em" className="m-auto" />
+                </div>
+              ) : (
+                <img className="w-full h-full object-contain" src={frame.url} />
+              )}
             </div>
           </RadioGroup.Option>
         ))}

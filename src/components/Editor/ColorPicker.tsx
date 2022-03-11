@@ -12,10 +12,10 @@ type ColorsProp = {
 // TODO: Regression with maintaining color code from tailwind config
 // FIXME: Look for solution as to why using named color stops working after a period of time
 const colors: ColorsProp = [
-  { name: "Black", class: "bg-[#1a1a1a]" },
-  { name: "Red", class: "bg-[#fb0000]" },
-  { name: "Blue", class: "bg-[#005ba9]" },
-  { name: "Green", class: "bg-[#006300]" },
+  { name: "Black", class: "bg-shirtBlack" },
+  { name: "Red", class: "bg-shirtRed" },
+  { name: "Blue", class: "bg-shirtBlue" },
+  { name: "Green", class: "bg-shirtGreen" },
 ];
 
 export function ColorPicker() {
@@ -38,10 +38,7 @@ export function ColorPicker() {
             <RadioGroup.Label as="p" className="sr-only">
               {color.name}
             </RadioGroup.Label>
-            <span
-              aria-hidden="true"
-              className={classNames(color.class, "bg-black h-8 md:h-14 w-8 md:w-14 border border-black border-opacity-10")}
-            />
+            <span aria-hidden="true" className={`${color.class} bg-black h-8 md:h-14 w-8 md:w-14 border border-black border-opacity-10`} />
           </RadioGroup.Option>
         ))}
       </div>
