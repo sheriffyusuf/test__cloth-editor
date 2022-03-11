@@ -37,6 +37,12 @@
       "@styles": [
         "src/styles"
       ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
       "@recoil/*": [
         "src/recoil/*"
       ],

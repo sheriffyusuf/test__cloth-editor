@@ -1,6 +1,6 @@
 export enum Atoms {
-  Color = "Color",
-  Art = "Art",
-  Frame = "Frame",
-  Size = "Size",
+  Colors = "Colors",
+  Arts = "Arts",
+  Frames = "Frames",
+  Sizes = "Sizes",
 }
