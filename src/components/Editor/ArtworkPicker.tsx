@@ -25,7 +25,7 @@ export function ArtworkPicker({ t }: { t: Translate }) {
       <RadioGroup
         value={activeArt}
         onChange={setArt}
-        className="relative w-full flex gap-4 snap-x snap-mandatory overflow-y-hidden overflow-x-auto py-6 px-2">
+        className="relative w-full flex gap-4 snap-x snap-mandatory overflow-y-hidden overflow-x-auto py-6 px-2 -ml-2 mb-4">
         {Arts.map((art, idx) => (
           <RadioGroup.Option
             as="div"
