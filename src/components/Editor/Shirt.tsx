@@ -6,6 +6,8 @@ import Image from "next/image";
 import React from "react";
 import { useRecoilValue } from "recoil";
 
+// This is mutable, to fix this subsequently, try checking the resource below
+// https://masteringjs.io/tutorials/fundamentals/enum
 const Hue = {
   Black: "hue-rotate-[360deg] saturate-0 brightness-50",
   Red: "hue-rotate-[0deg]",
