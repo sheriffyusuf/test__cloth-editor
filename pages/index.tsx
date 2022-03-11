@@ -1,4 +1,4 @@
-import { ArtworkPicker, ColorPicker, FramePicker, Navbar, RenderContainer, Shirt } from "@components";
+import { ArtworkPicker, ColorPicker, FramePicker, Navbar, RenderContainer, Shirt, SizePicker } from "@components";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 
@@ -20,10 +20,10 @@ const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
           </div>
         </aside>
         {/* Right Section */}
-        <aside className="px-6 md:p-20 min-h-full overflow-y-auto">
+        <aside className="px-6 pt-8 md:p-20 min-h-full overflow-y-auto border-t border-t-slate-200 md:border-t-0">
           <ArtworkPicker t={t} />
           <FramePicker t={t} />
-          <h2>{t`home:size`}</h2>
+          <SizePicker t={t} />
           <p className="text-gray-200">{t`home:details`}</p>
         </aside>
       </section>

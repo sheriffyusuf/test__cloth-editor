@@ -10,7 +10,7 @@ import { IoArrowBack } from "react-icons/io5";
 export function Navbar({ t }: { t: Translate }) {
   return (
     <nav className="border-b border-b-slate-200 px-4 md:px-20 md:col-span-2 flex">
-      <a href="/" className="flex my-auto py-4 px-4 -ml-4 font-semibold text-gray-300 hover:text-gray-500 hover:bg-slate-200">
+      <a href="/" className="flex my-auto text-lg py-4 px-4 -ml-4 font-semibold text-gray-300 hover:text-gray-500 hover:bg-slate-200">
         <IoArrowBack size="1.5em" />
         <span>/ {t`home:editor`}</span>
       </a>
