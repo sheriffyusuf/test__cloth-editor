@@ -1,7 +1,6 @@
-import withPlugins from "next-compose-plugins";
-import nextTranslate from "next-translate";
+const nextTranslate = require("next-translate");
 
-export default withPlugins([nextTranslate()], {
+module.exports = nextTranslate({
   reactStrictMode: true,
   swcMinify: true,
   poweredByHeader: false,

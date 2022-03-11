@@ -1,6 +1,7 @@
 env:
   browser: true
   es2021: true
+  node: true # Add this to allow undefined modules
 extends:
   - eslint:recommended
   - plugin:react/recommended
@@ -14,4 +15,6 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
-rules: {}
+rules: {
+ '@typescript-eslint/no-var-requires': 0,
+}

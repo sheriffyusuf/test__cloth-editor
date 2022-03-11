@@ -10,7 +10,7 @@ const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
   return (
     <div>
       <header>
-        <h2>{t`title`}</h2>
+        <h2>{t`home:title`}</h2>
         <div>
           {locales.map((lng) => (
             <Link href="/" passHref locale={lng} key={lng}>
@@ -21,7 +21,7 @@ const Home: React.FC<{ defaultNamespace: string }> = ({ defaultNamespace }) => {
       </header>
       <main>
         <p>{t("common:greet", { name: t`common:world` })}</p>
-        <p>{t`someText`}</p>
+        <p>{t`home:someText`}</p>
       </main>
       <footer>
         <a href="https://github.com/vinissimus/next-translate" target="_blank" rel="noopener noreferrer">
